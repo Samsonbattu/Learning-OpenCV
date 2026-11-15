@@ -32,6 +32,7 @@ if max_val >= threshold:
     bottom_right = (top_left[0]+needle_w, top_left[1]+needle_h)
     cv.rectangle(whole_image,top_left,bottom_right,color=(0,255,0),thickness=2,lineType=cv.LINE_4)
 
+
     #cv.imshow('Result',result)
     #cv.waitKey()
     cv.imwrite('result.jpg',whole_image)
